@@ -1,2 +1,17 @@
-# 请使用 .devcontainer/lite 或 .devcontainer/core
-# See: https://containers.dev/implementors/spec/#devcontainerjson
+{
+  "name": "Stratus Lite Dev",
+  "image": "mcr.microsoft.com/devcontainers/go:1.22",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "go version && rustc --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  }
+}
