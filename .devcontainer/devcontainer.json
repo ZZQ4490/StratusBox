@@ -1,20 +1,2 @@
-{
-  "name": "StratusBox Dev",
-  "image": "mcr.microsoft.com/devcontainers/rust:1",
-  "features": {
-    "ghcr.io/devcontainers/features/go:1": {
-      "version": "1.22"
-    },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-  },
-  "postCreateCommand": "rustc --version && go version",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "rust-lang.rust-analyzer",
-        "golang.go",
-        "vadimcn.vscode-lldb"
-      ]
-    }
-  }
-}
+# 请使用 .devcontainer/lite 或 .devcontainer/core
+# See: https://containers.dev/implementors/spec/#devcontainerjson
