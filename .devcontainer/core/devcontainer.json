@@ -1,0 +1,17 @@
+{
+  "name": "Stratus Core Dev",
+  "image": "mcr.microsoft.com/devcontainers/rust:1",
+  "features": {
+    "ghcr.io/devcontainers/features/go:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "rustc --version && cargo --version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb"
+      ]
+    }
+  }
+}

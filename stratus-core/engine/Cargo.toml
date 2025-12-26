@@ -1,0 +1,10 @@
+[package]
+name = "stratus-engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+stratus-crypto = { path = "../../common/stratus-crypto" }
+stratus-chunk = { path = "../../common/stratus-chunk" }
+stratus-storage = { path = "../../common/stratus-storage" }
+tokio = { version = "1", features = ["full"] }
